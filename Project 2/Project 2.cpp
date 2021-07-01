@@ -2,36 +2,34 @@
 #include <random>
 using namespace std;
 
-
-int* array_keyboard_filling(const size_t size, const string& message);
 /**
 * \brief Filling the array from the keyboard.
 * \param size - array size, message - request for entering a new element.
 * \return Filled array.
 */
+int* array_keyboard_filling(const size_t size, const string& message);
 
-int* array_random_filling(const size_t size);
 /**
 * \brief Random filling of an array.
 * \param size - array size.
 * \return Filled array.
 */
+int* array_random_filling(const size_t size);
 
-int* replace_last_el(int* array, const size_t size);
 /**
 * \brief Replaces the last negative element of the array with the penultimate element.
 * \param arr - array, size - array size.
 * \return Filled array.
 */
+int* replace_last_el(int* array, const size_t size);
 
-int* del_even_numbers(int* array, const size_t size, const size_t odd_size);
 /**
 * \brief Deletes even elements from the array.
 * \param arr - array, size - array size, odd_size - size of array without even elements.
 * \return New array without even numbers.
 */
+int* del_even_numbers(int* array, const size_t size, const size_t odd_size);
 
-int* create_new_array(const int* array, const size_t size);
 /**
 * \brief Creates a new array based on the old array according to rule:
 *		 if the number of the element of the old array is even - the element
@@ -40,39 +38,40 @@ int* create_new_array(const int* array, const size_t size);
 * \param arr - array, num - array size.
 * \return New array.
 */
+int* create_new_array(const int* array, const size_t size);
 
-void array_print(const int* array, const size_t size);
 /**
 * \brief Prints an array.
 * \param arr - array, size - array size, odd_size - size of array without even elements.
 */
+void array_print(const int* array, const size_t size);
 
-bool is_even(const int number);
 /**
 * \brief Ñhecks the number for parity .
 * \param number - number.
 * \return True if even else False.
 */
+bool is_even(const int number);
 
-size_t odd_size(const int* array, const size_t size);
 /**
 * \brief Counts odd elements of the array.
 * \param arr - array, size - size.
 * \return Count of odd elements.
 */
+size_t odd_size(const int* array, const size_t size);
 
-enum class Filling_Choice { keyboard, random };
 /**
 * \brief Users choice of array filling.
 *		 0 - keyboard, 1 - random.
 */
+enum class Filling_Choice { keyboard, random };
 
-
-void delete_array(int* array);
 /**
 * \brief Deletes an array from memory.
 * \param array - array
 */
+void delete_array(int* array);
+
 
 
 int main()
