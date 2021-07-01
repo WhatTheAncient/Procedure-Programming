@@ -2,42 +2,40 @@
 #include <random>
 using namespace std;
 
-
-int* array_keyboard_filling(const size_t size, const string& message);
 /**
 * \brief  Filling the array from the keyboard.
 * \param  size - array size, message - request for entering a new element.
 * \return Filled array.
 */
+int* array_keyboard_filling(const size_t size, const string& message);
 
-int* array_random_filling(const size_t size);
 /**
 * \brief Random filling of an array.
 * \param size - array size.
 * \return Filled array.
 */
+int* array_random_filling(const size_t size);
 
-void array_print(const int* array, const size_t size);
 /**
 * \brief Prints an array.
 * \param arr - array, size - array size.
 */
+void array_print(const int* array, const size_t size);
 
-bool is_even(const int number);
 /**
 * \brief  Ñhecks the number for parity .
 * \param  number - number.
 * \return True if even else False.
 */
+bool is_even(const int number);
 
-int sum_of_odd_numbers(int* array, const size_t size);
 /**
 * \brief  Calculates and prints sum of odd elements of array.
 * \param  array - array, size - size of array
 * \return Sum of odd elements.
 */
+int sum_of_odd_numbers(int* array, const size_t size);
 
-int count_of_elements(int* arr, const size_t size);
 /**
 * \brief  Counts elements of array which more then entered local maximum
 *		  and multiples of 5.
@@ -45,43 +43,42 @@ int count_of_elements(int* arr, const size_t size);
 * \return Count of elements which more then entered local maximum
 *		  and multiples of 5.
 */
+int count_of_elements(int* arr, const size_t size);
 
-bool multiple_of_5(const int number);
 /**
 * \brief  Checks number for a multiple of 5.
 * \param  number - number.
 * \return True if number multiple of 5, else - False.
 */
+bool multiple_of_5(const int number);
 
-bool not_null_element(const int* array);
 /**
 * \brief  Checks if first element of array is not null
 * \param  array - array
 * \return True if 1st element is not null, else - False.
 */
+bool not_null_element(const int* array);
 
-
-int* create_divided_array(int* array, const size_t size);
 /**
 * \brief  Creates new array, which even numbers of elements are divided by first
 *		  element of the old array.
 * \param  array - array, size - size of array.
 * \return New divided array.
 */
+int* create_divided_array(int* array, const size_t size);
 
-
-enum class Filling_Choice { keyboard, random };
 /**
 * \brief Users choice of array filling.
 *		 0 - keyboard, 1 - random.
 */
+enum class Filling_Choice { keyboard, random };
 
-
-void delete_array(int* array);
 /**
 * \brief Deletes an array from memory.
 * \param array - array
 */
+void delete_array(int* array);
+
 
 
 int main()
