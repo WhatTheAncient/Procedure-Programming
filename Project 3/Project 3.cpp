@@ -163,7 +163,7 @@ int** array_random_filling(const size_t rows, const size_t columns)
 
 bool is_even(const int number)
 {
-	return (number % 2 == 0) ? true : false;
+	return number % 2 == 0;
 }
 
 int** replace_3_columns(int** array, const size_t rows, const size_t columns)
