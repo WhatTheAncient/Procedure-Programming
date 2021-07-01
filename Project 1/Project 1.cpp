@@ -234,12 +234,12 @@ int* create_divided_array(int* array, const size_t size)
 
 bool multiple_of_5(const int number)
 {
-	return (number % 5 == 0) ? true : false;
+	return number % 5 == 0;
 }
 
 bool not_null_element(const int* array)
 {
-	return (array[0] != 0) ? true : false;
+	return array[0] != 0;
 }
 
 void delete_array(int* array)
